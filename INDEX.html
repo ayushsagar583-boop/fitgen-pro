@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10110f">
+
+    <title>FITGEN PRO | Train Beyond Limits</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span class="logo-icon">F</span>
+            FITGEN<span class="logo-pro">PRO</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#workouts">Workouts</a>
+            <a href="#exercises">Exercises</a>
+            <a href="#nutrition">Nutrition</a>
+            <a href="#progress">Progress</a>
+        </nav>
+
+        <a href="#workouts" class="nav-button">
+            START TRAINING <span>↗</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="status-label">
+                    <span class="status-dot"></span>
+                    YOUR PERSONAL FITNESS SYSTEM
+                </div>
+
+                <h1>
+                    BUILT BY<br>
+                    <span>STRENGTH.</span><br>
+                    DEFINED BY<br>
+                    <span>DISCIPLINE.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Stop guessing. Start progressing.
+                    Build your personalized workout routine, fuel your body
+                    with the right nutrition, and train with purpose.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#workouts" class="btn-primary">
+                        BUILD MY WORKOUT <span>↗</span>
+                    </a>
+
+                    <a href="#exercises" class="btn-secondary">
+                        EXPLORE EXERCISES
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>02–06</h3>
+                        <p>TRAINING DAYS</p>
+                    </div>
+
+                    <div class="stat-divider"></div>
+
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>YOUR OWN PACE</p>
+                    </div>
+
+                    <div class="stat-divider"></div>
+
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>YOUR GAME PLAN</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="hero-image"></div>
+
+                <div class="image-overlay"></div>
+
+                <div class="image-tag tag-top">
+                    <span class="tag-dot"></span>
+                    NO EXCUSES. JUST WORK.
+                </div>
+
+                <div class="image-tag tag-bottom">
+                    <span class="tag-number">01</span>
+                    <div>
+                        <strong>FORGE YOURSELF</strong>
+                        <p>EVERY REP COUNTS</p>
+                    </div>
+                </div>
+
+                <div class="vertical-text">
+                    STRENGTH · DISCIPLINE · PROGRESS
+                </div>
+
+            </div>
+
+            <div class="hero-watermark">STRONGER</div>
+
+        </section>
+
+
+        <!-- MARQUEE -->
+
+        <section class="marquee">
+            <div class="marquee-track">
+                <span>TRAIN HARD</span>
+                <span class="marquee-star">✳</span>
+                <span>EAT SMART</span>
+                <span class="marquee-star">✳</span>
+                <span>STAY DISCIPLINED</span>
+                <span class="marquee-star">✳</span>
+                <span>GET STRONGER</span>
+                <span class="marquee-star">✳</span>
+                <span>TRAIN HARD</span>
+                <span class="marquee-star">✳</span>
+                <span>EAT SMART</span>
+                <span class="marquee-star">✳</span>
+                <span>STAY DISCIPLINED</span>
+                <span class="marquee-star">✳</span>
+                <span>GET STRONGER</span>
+                <span class="marquee-star">✳</span>
+            </div>
+        </section>
+
+
+        <!-- WORKOUT GENERATOR -->
+
+        <section class="section workout-section" id="workouts">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow">01 / YOUR TRAINING BLUEPRINT</span>
+
+                    <h2>YOUR GOALS.<br>
+                        <span>YOUR GAME PLAN.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Your schedule. Your experience.
+                    One training plan built around you.
+                </p>
+
+            </div>
+
+            <div class="workout-layout">
+
+                <div class="workout-form card">
+
+                    <div class="card-heading">
+                        <div>
+                            <span class="small-label">PERSONALIZE YOUR PLAN</span>
+                            <h3>Build Your Workout</h3>
+                        </div>
+
+                        <span class="card-icon">↗</span>
+                    </div>
+
+                    <form id="workoutForm">
+
+                        <label for="goal">YOUR PRIMARY GOAL</label>
+
+                        <select id="goal" required>
+                            <option value="muscle">Build Muscle</option>
+                            <option value="strength">Increase Strength</option>
+                            <option value="fat">Lose Body Fat</option>
+                            <option value="fitness">General Fitness</option>
+                        </select>
+
+
+                        <label for="experience">TRAINING EXPERIENCE</label>
+
+                        <select id="experience" required>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+
+
+                        <label for="days">DAYS AVAILABLE PER WEEK</label>
+
+                        <div class="day-options">
+                            <button type="button" class="day-option"
+                                    data-days="2">2</button>
+
+                            <button type="button" class="day-option"
+                                    data-days="3">3</button>
+
+                            <button type="button" class="day-option active"
+                                    data-days="4">4</button>
+
+                            <button type="button" class="day-option"
+                                    data-days="5">5</button>
+
+                            <button type="button" class="day-option"
+                                    data-days="6">6</button>
+                        </div>
+
+                        <input type="hidden" id="days" value="4">
+
+
+                        <label for="duration">WORKOUT DURATION</label>
+
+                        <select id="duration">
+                            <option value="30">30 minutes</option>
+                            <option value="45">45 minutes</option>
+                            <option value="60" selected>60 minutes</option>
+                            <option value="90">90 minutes</option>
+                        </select>
+
+
+                        <label for="equipment">AVAILABLE EQUIPMENT</label>
+
+                        <select id="equipment">
+                            <option value="gym">Full Gym</option>
+                            <option value="dumbbells">Dumbbells Only</option>
+                            <option value="bodyweight">Bodyweight Only</option>
+                        </select>
+
+
+                        <button type="submit" class="btn-primary generate-btn">
+                            GENERATE MY PLAN <span>↗</span>
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <div class="workout-preview card">
+
+                    <div class="preview-top">
+                        <span class="small-label">YOUR NEXT LEVEL STARTS HERE</span>
+                        <span class="preview-status">READY TO BUILD</span>
+                    </div>
+
+                    <div class="preview-content" id="workoutResult">
+
+                        <div class="preview-symbol">✳</div>
+
+                        <h3>NO MORE<br>RANDOM WORKOUTS.</h3>
+
+                        <p>
+                            Select your training preferences and generate
+                            a workout split that fits your weekly schedule.
+                        </p>
+
+                        <div class="preview-features">
+                            <div>✓ Personalized training split</div>
+                            <div>✓ Exercises, sets and reps</div>
+                            <div>✓ Rest and recovery guidance</div>
+                        </div>
+
+                    </div>
+
+                    <div class="preview-footer">
+                        <span>FITGEN PRO SYSTEM</span>
+                        <span>TRAIN WITH PURPOSE ↗</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXERCISE LIBRARY -->
+
+        <section class="section exercise-section" id="exercises">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow">02 / MASTER YOUR MOVEMENT</span>
+
+                    <h2>KNOW THE MOVE.<br>
+                        <span>OWN THE REP.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Learn exercise technique, target muscles,
+                    and common mistakes before you lift.
+                </p>
+
+            </div>
+
+
+            <div class="exercise-grid">
+
+                <article class="exercise-card">
+
+                    <div class="exercise-image chest-image">
+                        <span class="exercise-category">CHEST</span>
+                        <span class="exercise-number">01</span>
+                    </div>
+
+                    <div class="exercise-info">
+                        <h3>Bench Press</h3>
+                        <p>Build upper-body pressing strength.</p>
+
+                        <div class="muscle-tags">
+                            <span>CHEST</span>
+                            <span>TRICEPS</span>
+                            <span>SHOULDERS</span>
+                        </div>
+
+                        <button class="text-button exercise-details"
+                                data-exercise="bench">
+                            LEARN TECHNIQUE <span>↗</span>
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="exercise-card">
+
+                    <div class="exercise-image back-image">
+                        <span class="exercise-category">BACK</span>
+                        <span class="exercise-number">02</span>
+                    </div>
+
+                    <div class="exercise-info">
+                        <h3>Lat Pulldown</h3>
+                        <p>Train your lats with controlled pulls.</p>
+
+                        <div class="muscle-tags">
+                            <span>LATS</span>
+                            <span>BICEPS</span>
+                        </div>
+
+                        <button class="text-button exercise-details"
+                                data-exercise="lat">
+                            LEARN TECHNIQUE <span>↗</span>
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="exercise-card">
+
+                    <div class="exercise-image legs-image">
+                        <span class="exercise-category">LEGS</span>
+                        <span class="exercise-number">03</span>
+                    </div>
+
+                    <div class="exercise-info">
+                        <h3>Barbell Squat</h3>
+                        <p>Develop lower-body strength and control.</p>
+
+                        <div class="muscle-tags">
+                            <span>QUADS</span>
+                            <span>GLUTES</span>
+                            <span>CORE</span>
+                        </div>
+
+                        <button class="text-button exercise-details"
+                                data-exercise="squat">
+                            LEARN TECHNIQUE <span>↗</span>
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="exercise-note">
+                <span>✳</span>
+                Learn correct technique before increasing the weight.
+            </div>
+
+        </section>
+
+
+        <!-- NUTRITION -->
+
+        <section class="nutrition-section" id="nutrition">
+
+            <div class="nutrition-visual">
+                <div class="nutrition-image"></div>
+                <div class="nutrition-badge">
+                    <span>FUEL</span>
+                    <strong>YOUR<br>AMBITION.</strong>
+                </div>
+            </div>
+
+            <div class="nutrition-content">
+
+                <span class="eyebrow">03 / NUTRITION THAT WORKS FOR YOU</span>
+
+                <h2>THE WORKOUT<br>BUILDS YOU.<br>
+                    <span>THE FOOD FUELS YOU.</span>
+                </h2>
+
+                <p>
+                    Get meal suggestions designed around your goals,
+                    food preferences, and everyday routine.
+                    From dal and roti to paneer, eggs, and chicken,
+                    build a realistic eating plan you can stick to.
+                </p>
+
+                <div class="nutrition-points">
+                    <div>
+                        <span>01</span>
+                        <div>
+                            <h4>GOAL-BASED MEALS</h4>
+                            <p>Muscle gain, fat loss, or maintenance.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        <div>
+                            <h4>YOUR FOOD. YOUR BUDGET.</h4>
+                            <p>Choose meals that fit your lifestyle.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        <div>
+                            <h4>CALORIE ESTIMATES</h4>
+                            <p>Practical estimates, not medical prescriptions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#nutrition-planner" class="btn-primary">
+                    BUILD MY DIET PLAN <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- DIET PLANNER -->
+
+        <section class="section diet-section" id="nutrition-planner">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow">04 / FUEL YOUR PROGRESS</span>
+
+                    <h2>SMART FOOD.<br>
+                        <span>STRONGER YOU.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Share a few details to get an estimated daily
+                    calorie target and practical meal suggestions.
+                </p>
+
+            </div>
+
+
+            <div class="diet-layout">
+
+                <form id="dietForm" class="card diet-form">
+
+                    <div class="card-heading">
+                        <div>
+                            <span class="small-label">YOUR NUTRITION PROFILE</span>
+                            <h3>Build Your Diet Plan</h3>
+                        </div>
+
+                        <span class="card-icon">✳</span>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div>
+                            <label for="age">AGE</label>
+                            <input id="age" type="number" min="18"
+                                   max="100" placeholder="e.g. 21" required>
+                        </div>
+
+                        <div>
+                            <label for="sex">SEX FOR CALORIE ESTIMATE</label>
+                            <select id="sex">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div>
+                            <label for="weight">WEIGHT (KG)</label>
+                            <input id="weight" type="number" min="30"
+                                   max="300" step="0.1" placeholder="e.g. 75"
+                                   required>
+                        </div>
+
+                        <div>
+                            <label for="height">HEIGHT (CM)</label>
+                            <input id="height" type="number" min="100"
+                                   max="250" placeholder="e.g. 170"
+                                   required>
+                        </div>
+
+                    </div>
+
+
+                    <label for="dietGoal">YOUR GOAL</label>
+
+                    <select id="dietGoal">
+                        <option value="muscle">Muscle Gain</option>
+                        <option value="fat">Fat Loss</option>
+                        <option value="maintain">Maintain Weight</option>
+                    </select>
+
+
+                    <label for="activity">DAILY ACTIVITY LEVEL</label>
+
+                    <select id="activity">
+                        <option value="1.2">Mostly Sitting</option>
+                        <option value="1.375">Lightly Active</option>
+                        <option value="1.55" selected>Moderately Active</option>
+                        <option value="1.725">Very Active</option>
+                    </select>
+
+
+                    <label for="foodPreference">FOOD PREFERENCE</label>
+
+                    <select id="foodPreference">
+                        <option value="veg">Vegetarian</option>
+                        <option value="egg">Eggetarian</option>
+                        <option value="nonveg">Non-Vegetarian</option>
+                    </select>
+
+
+                    <button type="submit" class="btn-primary generate-btn">
+                        CALCULATE MY PLAN <span>↗</span>
+                    </button>
+
+                </form>
+
+
+                <div class="card diet-result" id="dietResult">
+
+                    <span class="small-label">YOUR DAILY FUEL GUIDE</span>
+
+                    <div class="diet-empty">
+                        <div class="preview-symbol">✳</div>
+
+                        <h3>FUEL WITH<br>PURPOSE.</h3>
+
+                        <p>
+                            Your estimated calorie target and
+                            meal suggestions will appear here.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="disclaimer">
+                Nutrition estimates are educational starting points.
+                Individual needs vary; this planner is not medical advice.
+            </p>
+
+        </section>
+
+
+        <!-- PROGRESS -->
+
+        <section class="section progress-section" id="progress">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow">05 / CONSISTENCY OVER EVERYTHING</span>
+
+                    <h2>TRACK YOUR WORK.<br>
+                        <span>OWN YOUR PROGRESS.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Your progress is built one session at a time.
+                    Record your workouts and keep showing up.
+                </p>
+
+            </div>
+
+
+            <div class="progress-grid">
+
+                <div class="progress-card">
+                    <span class="progress-icon">↗</span>
+                    <p>WORKOUTS COMPLETED</p>
+                    <h3 id="workoutCount">0</h3>
+                    <span class="progress-caption">SESSIONS LOGGED</span>
+                </div>
+
+                <div class="progress-card">
+                    <span class="progress-icon">✳</span>
+                    <p>CURRENT BODYWEIGHT</p>
+
+                    <div class="weight-input-row">
+                        <input type="number" id="progressWeight"
+                               min="30" max="300" step="0.1"
+                               placeholder="kg">
+
+                        <button id="saveWeight" aria-label="Save weight">↗</button>
+                    </div>
+
+                    <span class="progress-caption" id="weightStatus">
+                        ADD YOUR WEIGHT
+                    </span>
+                </div>
+
+                <div class="progress-card">
+                    <span class="progress-icon">◎</span>
+                    <p>YOUR MINDSET</p>
+                    <h3>1% <span>BETTER</span></h3>
+                    <span class="progress-caption">EVERY DAY COUNTS</span>
+                </div>
+
+            </div>
+
+            <button class="btn-primary log-workout-btn" id="logWorkout">
+                + LOG A COMPLETED WORKOUT
+            </button>
+
+            <p class="progress-note">
+                Progress data is saved in this browser on your device.
+            </p>
+
+        </section>
+
+
+        <!-- FINAL CTA -->
+
+        <section class="final-cta">
+
+            <span class="eyebrow">YOUR NEXT CHAPTER STARTS NOW</span>
+
+            <h2>STOP WAITING.<br>
+                <span>START BUILDING.</span>
+            </h2>
+
+            <p>
+                The strongest version of you is built through
+                the decisions you make every single day.
+            </p>
+
+            <a href="#workouts" class="btn-primary">
+                BUILD YOUR GAME PLAN <span>↗</span>
+            </a>
+
+            <div class="cta-watermark">NO LIMITS</div>
+
+        </section>
+
+    </main>
+
+
+    <!-- EXERCISE MODAL -->
+
+    <div class="modal" id="exerciseModal"
+         role="dialog" aria-modal="true"
+         aria-labelledby="modalTitle" hidden>
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="closeModal"
+                    aria-label="Close exercise guide">×</button>
+
+            <span class="eyebrow">EXERCISE TECHNIQUE GUIDE</span>
+
+            <h2 id="modalTitle">Exercise Guide</h2>
+
+            <div id="modalBody"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <a href="#" class="logo">
+            <span class="logo-icon">F</span>
+            FITGEN<span class="logo-pro">PRO</span>
+        </a>
+
+        <p>TRAIN SMARTER. GET STRONGER.</p>
+
+        <span>© <span id="year"></span> FITGEN PRO</span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
